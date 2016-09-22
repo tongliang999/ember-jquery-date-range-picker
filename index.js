@@ -2,13 +2,12 @@
 'use strict';
 
 module.exports = {
-	name: 'ember-jquery-date-range-picker',
+	name: 'ember-zbj-date-range-picker',
 
 	included: function(app)
 	{
 		this._super.included(app);
-
-		this.app.import(app.bowerDirectory + '/jquery-date-picker/jquery.daterangepicker.js');
-		this.app.import(app.bowerDirectory + '/jquery-date-picker/daterangepicker.css');
+		this.app.import('vendor/jquery.daterangepicker.js');
+		this.app.import('vendor/daterangepicker.css');
 	}
 };
